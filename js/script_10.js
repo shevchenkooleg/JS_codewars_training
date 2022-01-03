@@ -11,3 +11,13 @@ function solution(string) {
   let res = _.join(' ');
   return res;  
 }
+
+
+
+// complete the function
+// function solution(string) {
+//     console.log(string.replace(/([A-Z])/g, ' $1'));
+  
+//   }
+
+// solution('freeCodeCamp');
