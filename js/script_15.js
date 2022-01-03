@@ -2,9 +2,9 @@
 
 function rot13(message) {
   let res = [];
-  let orign = []
+  let orign = [];
   for (let i = 0; i < message.length; i++) {
-    orign.push(message.slice(i).charCodeAt(0))
+    orign.push(message.slice(i).charCodeAt(0));
     if (message.slice(i).charCodeAt(0) >= 97 && message.slice(i).charCodeAt(0) <= 122) {
       if (((message.slice(i).charCodeAt(0)) + 13) > 122) {
         res.push((((message.slice(i).charCodeAt(0)) + 13) - 122) + 96);
@@ -18,7 +18,7 @@ function rot13(message) {
         res.push((message.slice(i).charCodeAt(0)) + 13);
       }
     } else {
-      res.push(message.slice(i).charCodeAt(0))
+      res.push(message.slice(i).charCodeAt(0));
     }
     
   }
