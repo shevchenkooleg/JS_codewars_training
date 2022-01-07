@@ -28,3 +28,5 @@ function dataReverse(data) {
 //   console.log(res);
   return res;
 }
+
+// 'some string'

@@ -4,7 +4,7 @@ function numberOfPairs(gloves)
 {
   let dict = {};
   for (let i = 0; i < gloves.length; i++) {
-    if (typeof dict[gloves[i]] !== "undefined") {
+    if (typeof dict[gloves[i]] !== 'undefined') {
       dict[gloves[i]] += 1;
     } else {
       dict[gloves[i]] = 1;
