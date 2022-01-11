@@ -1,17 +1,17 @@
 'use strict';
 
 function deleteNth(arr,n) {
-    res_obj = {};
-    res_arr = [];
+    let resObj = {};
+    let resArr = [];
     const counter = n;
     for (let i = 0; i < arr.length; i++) {
-      if (typeof res_obj[arr[i]] === "undefined") {
-        res_obj[arr[i]] = 1;
-        res_arr.push(arr[i]);
-      } else if (typeof res_obj[arr[i]] !== "undefined" && res_obj[arr[i]] < counter) {
-        res_arr.push(arr[i]);
-        res_obj[arr[i]] += 1;
+      if (typeof resObj[arr[i]] === 'undefined') {
+        resObj[arr[i]] = 1;
+        resArr.push(arr[i]);
+      } else if (typeof resObj[arr[i]] !== 'undefined' && resObj[arr[i]] < counter) {
+        resArr.push(arr[i]);
+        resObj[arr[i]] += 1;
       }
     }
-    return res_arr;
+    return resArr;
 }
