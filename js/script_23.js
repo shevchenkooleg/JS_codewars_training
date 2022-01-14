@@ -15,8 +15,8 @@ function computerToPhone(numbers){
     };
     
   let res = '';  
-  for (elem of numbers) {
+  for (let elem of numbers) {
     res += keys[elem];
   }
   return res;  
-  };
+  }

@@ -4,7 +4,7 @@ function solve(arr) {
   if (arr == []) {
     return [];
   }
-  arrDct = {};
+  let arrDct = {};
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] in arrDct) {
       arrDct[arr[i]] = i;
@@ -16,7 +16,7 @@ function solve(arr) {
   let res = [];
   tmp.sort(compareNum);
   tmp.forEach(el => {
-    res.push(arr[el])
+    res.push(arr[el]);
   });
   return res;
 }
